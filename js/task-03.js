@@ -27,24 +27,3 @@ const createGalleryMarkup = (images) => {
 
 const galleryMarkup = createGalleryMarkup(images);
 gallery.insertAdjacentHTML("beforeend", galleryMarkup);
-
-// --------------------------------------------------------------------------------------------------------------------
-// (це зробlенно за допомогою чата gpt, хотів узнати як реаlізувати анімацію)
-// const gallery = document.querySelector(".gallery");
-
-// const img = document.createElement("img");
-// img.src = images[0].url;
-// img.alt = images[0].alt;
-// img.classList.add("gallery-image");
-// gallery.appendChild(img);
-
-// let currentImageIndex = 0;
-
-// function changeImage() {
-//   currentImageIndex = (currentImageIndex + 1) % images.length;
-//   const currentImage = images[currentImageIndex];
-//   img.src = currentImage.url;
-//   img.alt = currentImage.alt;
-// }
-
-// const changeImageInterval = setInterval(changeImage, 3000);
