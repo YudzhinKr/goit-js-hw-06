@@ -10,7 +10,10 @@ loginForm.addEventListener("submit", (event) => {
     formObject[key] = value;
   });
 
-  console.log(formObject);
-
-  loginForm.reset();
+  if (!formObject.email || !formObject.password) {
+    alert("Упс! Будь ласка, заповніть поля Email та Password.");
+  } else {
+    console.log(formObject);
+    loginForm.reset();
+  }
 });
